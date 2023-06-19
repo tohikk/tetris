@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,9 +6,9 @@
 }
 
 :root {
-  --bg-py: #7000ff;
-  --bg-gold: #ffff00;
-  --bg-green: #aaff77;
+  --bg-py: #7000FF;
+  --bg-gold: #FFFF00;
+  --bg-green: #AAFF77;
 }
 
 .container {
@@ -25,7 +23,6 @@
   }
 }
 
-ul,
 li {
   list-style: none;
 }

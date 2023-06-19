@@ -1,0 +1,132 @@
+.wrapper{
+    padding: 30px 0 80px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 16px;
+    align-items: start;
+}
+.wp_item{
+    padding: 10px 10px;
+    display: flex;
+}
+.wrapper-text{
+    width: 100%;
+}
+.wp_display{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    align-items: center;
+}
+.wp_text h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+.wp_text h2{
+    padding-top: 3%;
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    font-weight: 300;
+}
+.wp_text span{
+    font-size: 23px;
+}
+.wp_text button{
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    font-weight: 300;
+}
+.flex{
+    border: 1px solid #ddd;
+    align-items: center;
+    margin-left: 43%;
+    border-radius: 5px;
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+.wp_content p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ddd;
+    text-align: center;
+    margin-left: 80%;
+}
+.wp_content{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+}
+.wp_form{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+}
+form input{
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5%;
+    border: 2px solid #ddd;
+    margin-top: 2%;
+}
+.btn{
+    padding: 5px 35px;
+    margin-left: 30%;
+    border-radius: 5px;
+    background-color: #7000ff;
+    color: white;
+    border: #ddd;
+}
+
+
+.wp_img{
+    border-radius: 5%;
+}
+
+#form h3{
+    margin-left: 20%;
+}
+#form .btn{
+    margin-left: 20%;
+}
+
+#form #text1{
+    margin-left: 5%;
+
+}
+
+
+.wp_text h2{
+    margin-left: 100%;
+}
+.wp_text h2{
+    display: flex;
+    justify-content: end;
+}
+@media screen and (max-width:990px){
+    .wrapper{
+       grid-template-columns: 1fr;
+    }   
+    .wp_content{
+       order: 2;
+    }
+    .wp_form{
+       order: 1;
+    }
+    .btn{
+        margin-left: 41%;
+    }
+    #form h3{
+        margin-left: 50%;
+    
+    }
+   }
+@media screen and (max-width:720px){
+
+}

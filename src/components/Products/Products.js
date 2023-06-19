@@ -1,18 +1,15 @@
 import React from "react";
-import Skeleton from "../Skeleton/Skeleton";
-import "./Products.css";
-import ProductWrapper from "../product wrapper/Productwrapper";
+import Skeleton from "../skeleton/Skeleton";
 import { PRODUCTS } from "../../static";
-
-
-
+import "./Products.css";
+import ProductWrapper from "../product-wrapper/ProductWrapper";
 
 function Products() {
   return (
-    <div className="container">
+    <div className="container"> 
+      {/* <h2>Products</h2> */}
       <ProductWrapper data={PRODUCTS}/>
-      <h2>Products</h2>
-      <Skeleton/>
+      <Skeleton />
     </div>
   );
 }

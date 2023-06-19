@@ -1,93 +1,53 @@
-import React from "react";
-import appleLogo from "../../assets/logo/apple-logo.svg";
-import googlePlayLogo from "../../assets/logo/googleplay-logo.svg";
-import instagramLogo from "../../assets/logo/instagram.svg";
-import telegramLogo from "../../assets/logo/telegram.svg";
-import youtubeLogo from "../../assets/logo/youtube.svg";
-import facebookLogo from "../../assets/logo/facebook.svg";
-
-import "./Footer.css";
+import React from 'react'
+import { BsGooglePlay, BsApple, BsInstagram, BsTelegram, BsYoutube, BsFacebook } from "react-icons/bs"
+import "./Footer.css"
 
 function Footer() {
-  return (
-    <div className="container footer">
-      <div className="footer__top">
-        <div className="block__1">
-          <p className="fw-b">Biz haqimizda</p>
-          <a href="#" className="footer__link mb-19">
-            Topshirish punktlari
-          </a>
-          <a href="#" className="footer__link">
-            Vakansiyalar
-          </a>
-        </div>
-        <div className="block__2">
-          <p className="fw-b">Foydalanuvchilarga</p>
-          <a href="#" className="footer__link mb-19">
-            Biz bilan bogʻlanish
-          </a>
-          <a href="#" className="footer__link">
-            Savol-Javob
-          </a>
-        </div>
-        <div className="block__3">
-          <p className="fw-b">Tadbirkorlarga</p>
-          <a href="#" className="footer__link mb-19">
-            Uzumda soting
-          </a>
-          <a href="#" className="footer__link">
-            Sotuvchi kabinetiga kirish
-          </a>
-        </div>
-        <div className="block__4">
-          <div className="block__4-top">
-            <p className="fw-b">Ilovani yuklab olish</p>
-            <a href="#" className="footer__link mb-19">
-              <img src={appleLogo} alt="" />
-              <p>AppStore</p>
-            </a>
-            <a href="#" className="footer__link">
-              <img src={googlePlayLogo} alt="" />
-              <p>Google Play</p>
-            </a>
-          </div>
-          <div className="block__4-bottom">
-            <p className="fw-b">Uzum ijtimoiy tarmoqlarda</p>
-            <div className="block__4-bottom-links">
-              <a href="https://www.instagram.com/uzum.market/" target="__blank">
-                <img src={instagramLogo} alt="Instagram Logo" />
-              </a>
-              <a href="https://t.me/uzum_market" target="__blank">
-                <img src={telegramLogo} alt="Telegram Logo" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCY3nNF2MUDKHrELA6LzbnHA"
-                target="__blank"
-              >
-                <img src={youtubeLogo} alt="Youtube Logo" />
-              </a>
-              <a href="https://www.facebook.com/uzummarket" target="__blank">
-                <img src={facebookLogo} alt="Facebook Logo" />
-              </a>
+
+    return (
+        <div className='container'>
+            <div className="footer__container">
+                <ul className="collections">
+                    <h4>Biz haqimizda</h4>
+                    <li className="item">Topshirish punktlari</li>
+                    <li className="item">Vakansiyalar</li>
+                </ul>
+                <ul className="collections">
+                    <h4>Foydalanuvchilarga</h4>
+                    <li className="item">Biz bilan bog'lanish</li>
+                    <li className="item">Savol-Javob</li>
+                </ul>
+                <ul className="collections">
+                    <h4>Tadbirkorlarga</h4>
+                    <li className="item">Uzumda Soting</li>
+                    <li className='item'>Sotuvchi kabinetiga o'tish</li>
+                </ul>
+                <div className="collections">
+                    <h4>Ilovani yuklab olish</h4>
+                    <div className="top">
+                        <div className="apple"><BsApple /><span>App Store</span></div>
+                        <div className="google__play"><BsGooglePlay /><span>Google Play</span></div>
+                    </div>
+                    <h4>Ijtimoiy tarmoqlarda kuzating!</h4>
+                    <div className="bottom">
+                        <BsInstagram />
+                        <BsTelegram />
+                        <BsYoutube />
+                        <BsFacebook />
+                    </div>
+                </div>
             </div>
-          </div>
+            <div className="policy">
+                <div className="left">
+                    <li>Maxfiylik kelishuvi</li>
+                    <li>Foydalanuvchi kelishuvi</li>
+                </div>
+                <div className="right">
+                    <p>«2023© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div className="footer__bottom">
-        <div className="footer__bottom-links">
-          <a href="#" className="fw-b">
-            Соглашение о конфиденциальности
-          </a>
-          <a href="#" className="fw-b">
-            Пользовательское соглашение
-          </a>
-        </div>
-        <p>
-          «2023&copy; ИП ООО «UZUM MARKET». ИНН 309376127. Все права защищены»
-        </p>
-      </div>
-    </div>
-  );
+    )
 }
 
-export default Footer;
+export default Footer
